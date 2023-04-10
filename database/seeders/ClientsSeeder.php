@@ -1,6 +1,7 @@
 <?php
 
 namespace Database\Seeders;
+use App\Models\clients;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -13,5 +14,9 @@ class ClientsSeeder extends Seeder
     public function run(): void
     {
         //
+
+        $this->call([
+            ClientsSeeder::class
+        ]);
     }
 }
