@@ -28,7 +28,7 @@
                 <th>Price</th>
                 <th>Stock</th>
                 <th>Description</th>
-                <th>Photho</th>
+                <th>Photo</th>
             </tr>    
         </thead>
         <tbody>
