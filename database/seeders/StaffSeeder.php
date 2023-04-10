@@ -1,6 +1,7 @@
 <?php
 
 namespace Database\Seeders;
+use App\Models\staff;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -13,5 +14,8 @@ class StaffSeeder extends Seeder
     public function run(): void
     {
         //
+        $this->call([
+            StaffSeeder::class
+        ]);
     }
 }
