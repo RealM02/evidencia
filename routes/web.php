@@ -1,6 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\clients;
+use App\Models\Order;
+use App\Models\OrderDetail;
+use App\Models\products;
+use App\Models\staff;
 
 /*
 |--------------------------------------------------------------------------
