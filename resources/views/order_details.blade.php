@@ -24,23 +24,19 @@
             <tr>
                 <th>ID</th>
                 <th>Active</th>
-                <th>Name</th>
-                <th>Price</th>
-                <th>Stock</th>
-                <th>Description</th>
-                <th>Photo</th>
+                <th>Order ID</th>
+                <th>Product ID</th>
+                <th>Quantity</th>
             </tr>    
         </thead>
         <tbody>
-            @foreach($products as $product)
+            @foreach($details as $detail)
             <tr>
-                <td>{{$products->product_id}}</td>
-                <td>{{$products->active}}</td>
-                <td>{{$products->name}}</td>
-                <td>{{$products->price}}</td>
-                <td>{{$products->stock}}</td>
-                <td>{{$products->description}}</td>
-                <td>{{$products->photo}}</td>
+                <td>{{$order_details->details_id}}</td>
+                <td>{{$order_details->active}}</td>
+                <td>{{$order_details->order_id}}</td>
+                <td>{{$order_details->product_id}}</td>
+                <td>{{$order_details->quantity}}</td>
             </tr> 
             @endforeach
         </tbody>    

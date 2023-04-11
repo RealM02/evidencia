@@ -1,11 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Models\clients;
-use App\Models\Order;
-use App\Models\OrderDetail;
-use App\Models\products;
-use App\Models\staff;
+use App\Http\Controllers\clientsController;
+use App\Http\Controllers\productsController;
+use App\Http\Controllers\staffController;
+use App\Http\Controllers\orderController;
+use App\Http\Controllers\order_detailsController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -24,3 +25,5 @@ Route::get('/', function () {
 Route::get('/clients',[clientsController::class, 'index']);
 Route::get('/staff',[staffController::class, 'staff']);
 Route::get('/products',[productsController::class, 'products']);
+Route::get('/order',[orderController::class, 'orders']);
+Route::get('/order_details',[order_detailsController::class, 'detail']);

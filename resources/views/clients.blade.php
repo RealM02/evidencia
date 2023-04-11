@@ -33,7 +33,7 @@
             </tr>    
         </thead>
         <tbody>
-            @foreach($all as $clients)
+            @foreach($clients as $client)
             <tr>
                 <td>{{$clients->client_id}}</td>
                 <td>{{$clients->name}}</td>

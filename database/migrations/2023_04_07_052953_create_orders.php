@@ -14,12 +14,8 @@ return new class extends Migration
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
             $table->boolean('active');
-            $table->unsignedBigInteger('client_id');
-            $table->foreign('client_id')
-              ->references('id')->on('clients')->onDelete('cascade');
-            $table->unsignedBigInteger('staff_id');
-            $table->foreign('staff_id')
-            ->references('id')->on('staff')->onDelete('cascade');
+            $table->foreignid('client_id');
+            $table->foreignid('staff_id');
             $table->string('total');
             $table->string('subtotal');
             $table->string('vat');

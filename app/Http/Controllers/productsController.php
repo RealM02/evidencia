@@ -7,7 +7,7 @@ use App\Models\products;
 
 class productsController extends Controller
 {
-    public function product(){
+    public function products(){
         $page_title="PRODUCTS";
         //select * from clients
             $products=products::all();

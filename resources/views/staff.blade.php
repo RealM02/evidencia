@@ -33,7 +33,7 @@
             </tr>    
         </thead>
         <tbody>
-            @foreach($all as $staff)
+            @foreach($staff as $staff)
             <tr>
                 <td>{{$staff->staff_id}}</td>
                 <td>{{$staff->active}}</td>
